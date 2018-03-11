@@ -1,0 +1,290 @@
+/*Color Pallette
+#279af1 Brilliant Azure
+#60656f Black Coral
+#131112 Black Licorice
+*/
+/*
+Font:
+Titillium Web
+Light 300
+Regular 400
+Semi-bold 600
+*/
+
+/*----------------------------------  
+Global Stlyes
+------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* border box fix */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Titillium Web', 'Open Sans', sans-serif;
+	/*one Em roughly ten pixels (16 x 62.5% = 10)*/
+	font-size: 62.5%;
+	letter-spacing: 1.5px;
+	margin: 0;
+}
+
+a:link {
+	color: #29f;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:visited {
+	color: #29f;
+	text-decoration: underline;
+}
+
+/*----------------------------------  
+Headings
+------------------------------------*/
+h1, 
+h2,
+h3 {
+	font-size: 3em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	word-spacing: 2px;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	margin-top: 1.5em;
+	text-align: center;
+}
+
+h2:after {
+	content: "\A71C";
+	display: block;
+	padding-top: 0.5em;
+}
+
+/*----------------------------------  
+Header
+------------------------------------*/
+.header {
+	width: 100%;
+}
+
+.header-inner {
+	padding: 2em;
+}
+
+.logo {
+	width: 8em;
+}
+
+.profession-snippet {
+	color: #666;
+	font-size: 1.8em;
+	font-style: italic;
+}
+
+.name {
+	/*backface-visibility: hidden;*/
+	-webkit-animation: 1.5s moveInRight ease-out;
+	        animation: 1.5s moveInRight ease-out;
+	margin-right: 2em;
+}
+
+@-webkit-keyframes moveInRight {
+	0% {
+		opacity: 0; 
+		-webkit-transform: translateX(10em); 
+		        transform: translateX(10em);
+	}
+
+	80% {
+		-webkit-transform: translateX(-1em);
+		        transform: translateX(-1em);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(0);
+		        transform: translate(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0; 
+		-webkit-transform: translateX(10em); 
+		        transform: translateX(10em);
+	}
+
+	80% {
+		-webkit-transform: translateX(-1em);
+		        transform: translateX(-1em);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(0);
+		        transform: translate(0);
+	}
+}
+
+/*
+Header-image
+Photo by Tony Webster on Unsplash
+*/
+.header-img {
+	background: url(https://source.unsplash.com/F9o7u-CnDJk) no-repeat fixed;
+	background-size: cover;
+	background-position: bottom center;
+	height: 70vh;
+	width: 100%;
+}
+
+hr { 
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+	border: 0;
+	height: 3px;
+	margin: 2em;
+}
+
+/*----------------------------------  
+Section-Projects
+------------------------------------*/
+.section-projects {
+	margin-bottom: 6em;
+	width: 100%;
+}
+
+.project-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.figure-container {
+	border: 2px solid #666f;
+	box-shadow: 5px 5px 5px #ddd;
+	margin: 3em;
+	padding: 10px 10px 20px;
+}
+
+.thumbnail-img {
+	width: 30em;
+}
+
+figcaption {
+	text-align: center;
+}
+
+.grow { 
+	transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+	-webkit-transform: scale(1.1); 
+	        transform: scale(1.1); 
+}
+
+/*---------------------------------- 
+Footer
+------------------------------------*/
+
+.footer {
+	width: 100%;
+	background: #111;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+.footer > a {
+	display: inline-block;
+	margin: 0.2em;
+	padding: 0.5em;  
+}
+
+.footer > p {
+	font-size: 1.4em;
+}
+
+/*---------------------------------- 
+Media Queries
+------------------------------------*/
+/*
+TODO: To reduce the size of project
+figure for screens at around 340
+mainly for Nokia lumia & iphone4
+*/
+@media screen and (max-width: 340px) {
+	.thumbnail-img {
+		width: 25em;
+	}
+}
+
+/*---------------------------------- 
+Tablets
+------------------------------------*/
+@media screen and (min-width: 600px) {
+
+	.header-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 4em;
+	}
+
+	.logo {
+		width: 12em;
+		margin-right: 2em;
+	}
+
+	h1 {
+		font-size: 4.5em;
+	}
+
+	.profession-snippet {
+		font-size: 2em;
+		margin: 0;
+	}
+}
+
+/*---------------------------------- 
+Desktops
+------------------------------------*/
+@media screen and (min-width: 950px) {
+
+	h1 {
+		font-size: 5.5em;
+		font-weight: 400;
+	}
+
+	h2,
+	h3 {
+		font-size: 3.5em;
+	}
+
+	.profession-snippet {
+		font-size: 3em;
+	}
+
+	.thumbnail-img {
+		width: 40em;
+	}
+}

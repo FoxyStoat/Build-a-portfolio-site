@@ -51,6 +51,10 @@ a:visited {
 	text-decoration: underline;
 }
 
+.center {
+	text-align: center;
+}
+
 /*----------------------------------  
 Headings
 ------------------------------------*/
@@ -82,7 +86,7 @@ h2:after {
 /*----------------------------------  
 Header
 ------------------------------------*/
-.header {
+.main-header {
 	width: 100%;
 }
 
@@ -178,19 +182,22 @@ Section-Projects
 	justify-content: space-around;
 }
 
-.figure-container {
+.project-article {
 	border: 2px solid #666;
 	box-shadow: 5px 5px 5px #ddd;
 	margin: 3em;
-	padding: 10px 10px 20px;
+	padding: 10px 20px;
+}
+
+.article-heading {
+	color: #666;
+	font-weight: 600;
+	font-size: 2em;
+	padding: 0.5em;
 }
 
 .thumbnail-img {
 	width: 30em;
-}
-
-figcaption {
-	text-align: center;
 }
 
 .grow { 
@@ -211,7 +218,6 @@ Footer
 	background: #111;
 	color: #fff;
 	padding: 1em;
-	text-align: center;
 }
 
 .footer > a {
@@ -262,6 +268,10 @@ Tablets
 	.profession-snippet {
 		font-size: 2em;
 		margin: 0;
+	}
+
+	.thumbnail-img {
+		width: 35em;
 	}
 }
 

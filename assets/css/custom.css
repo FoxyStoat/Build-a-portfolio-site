@@ -105,7 +105,7 @@ Header
 .name {
 	/*backface-visibility: hidden;*/
 	-webkit-animation: 1.5s moveInRight ease-out;
-					animation: 1.5s moveInRight ease-out;
+	animation: 1.5s moveInRight ease-out;
 	margin-right: 2em;
 }
 
@@ -113,18 +113,18 @@ Header
 	0% {
 		opacity: 0; 
 		-webkit-transform: translateX(10em); 
-						transform: translateX(10em);
+		transform: translateX(10em);
 	}
 
 	80% {
 		-webkit-transform: translateX(-1em);
-						transform: translateX(-1em);
+		transform: translateX(-1em);
 	}
 
 	100% {
 		opacity: 1;
 		-webkit-transform: translate(0);
-						transform: translate(0);
+		transform: translate(0);
 	}
 }
 
@@ -132,18 +132,18 @@ Header
 	0% {
 		opacity: 0; 
 		-webkit-transform: translateX(10em); 
-						transform: translateX(10em);
+		transform: translateX(10em);
 	}
 
 	80% {
 		-webkit-transform: translateX(-1em);
-						transform: translateX(-1em);
+		transform: translateX(-1em);
 	}
 
 	100% {
 		opacity: 1;
 		-webkit-transform: translate(0);
-						transform: translate(0);
+		transform: translate(0);
 	}
 }
 
@@ -204,7 +204,7 @@ Section-Projects
 
 .grow:hover { 
 	-webkit-transform: scale(1.1); 
-					transform: scale(1.1); 
+	transform: scale(1.1); 
 }
 
 /*---------------------------------- 

@@ -80,9 +80,9 @@ h2:after {
 	padding-top: 0.5em;
 }
 
-.project-decription {
+.project-description-title {
 	font-size: 2em;
-	text-align: center;
+	margin: 0.5em;
 }
 /*----------------------------------
 Header
@@ -184,6 +184,12 @@ Section-Projects
 	padding: 10px 20px;
 }
 
+.figure-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .article-heading {
 	color: #666;
 	font-weight: 600;
@@ -206,6 +212,11 @@ Section-Projects
 
 figcaption > a:link {
 	display: block;
+}
+
+.project-description {
+	max-width: 30em;
+	font-size: 1.7em;
 }
 
 /*----------------------------------

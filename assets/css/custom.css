@@ -216,7 +216,7 @@ figcaption > a:link {
 
 .project-description {
 	max-width: 30em;
-	font-size: 1.7em;
+	font-size: 1.5em;
 }
 
 /*----------------------------------
@@ -281,6 +281,10 @@ Tablets
 	.thumbnail-img {
 		width: 35em;
 	}
+
+	.project-description {
+		font-size: 1.6em;
+	}
 }
 /*----------------------------------
 Desktops
@@ -302,5 +306,9 @@ Desktops
 
 	.thumbnail-img {
 		width: 40em;
+	}
+
+	.project-description {
+		font-size: 1.7em;
 	}
 }

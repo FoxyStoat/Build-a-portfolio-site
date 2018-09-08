@@ -4,7 +4,7 @@ _Project 2 for FEND Udacity_
 
 ## View Project
 
-[Link to portfolio project](https://foxystoat.github.io/carol-hodgson/)
+[Link to portfolio project](https://foxystoat.github.io/portfolio/)
 
 Build a portfolio site replicate the design PDF provided by Udacity.
 Meet the specifications:

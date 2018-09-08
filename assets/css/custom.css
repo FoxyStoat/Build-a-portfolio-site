@@ -2,6 +2,8 @@
 #279af1 Brilliant Azure
 #60656f Black Coral
 #131112 Black Licorice
+#84fab0 pale green-cyan/pale sea green
+#8fd3f4 Very soft blue
 Font:
 Titillium Web
 Light 300
@@ -80,10 +82,6 @@ h2:after {
 	padding-top: 0.5em;
 }
 
-.project-description-title {
-	font-size: 2em;
-	margin: 0.5em;
-}
 /*----------------------------------
 Header
 ------------------------------------*/
@@ -217,6 +215,21 @@ figcaption > a:link {
 .project-description {
 	max-width: 30em;
 	font-size: 1.5em;
+	line-height: 1.6em;
+	margin: 1em 0;
+}
+
+.highlight {
+	background-image: linear-gradient(120deg, #279af1 0%, #84fab0 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.30s ease-in;
+  padding: 0.1em;
+}
+
+.highlight:hover {
+  background-size: 100% 88%;
 }
 
 /*----------------------------------

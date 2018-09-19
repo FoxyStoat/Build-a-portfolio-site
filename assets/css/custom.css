@@ -48,7 +48,6 @@ a:hover,
 a:active,
 a:visited {
 	color: #29f;
-	text-decoration: underline;
 }
 
 .center {
@@ -85,8 +84,26 @@ h2:after {
 /*----------------------------------
 Header
 ------------------------------------*/
+
 .main-header {
 	width: 100%;
+	position: relative;
+}
+
+/*download pdf button*/
+#btn {
+  text-decoration: none;
+  background: #131112;
+  color: #fff;
+  padding: 0.8em;
+  display: inline-block;
+  font-size: 1.3em;
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .header-inner {

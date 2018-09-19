@@ -315,6 +315,10 @@ Tablets
 	.project-description {
 		font-size: 1.6em;
 	}
+
+	#btn {
+  	font-size: 1.6em;
+	}
 }
 /*----------------------------------
 Desktops
@@ -340,5 +344,9 @@ Desktops
 
 	.project-description {
 		font-size: 1.7em;
+	}
+
+		#btn {
+  	font-size: 1.7em;
 	}
 }

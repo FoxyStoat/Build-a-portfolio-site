@@ -216,6 +216,10 @@ Section-Projects
 	width: 30em;
 }
 
+.portrait-img {
+	height: 30em;
+}
+
 figcaption > a:link {
 	display: block;
 }

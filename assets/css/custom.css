@@ -164,7 +164,7 @@ Header-image
 Photo by Tony Webster on Unsplash
 */
 .header-img {
-	background: url(../images/tony-webster-97532-unsplash.jpg) no-repeat fixed;
+	background: url(../images/tony-webster-97532-unsplash-1x.jpg) no-repeat fixed;
 	background-size: cover;
 	background-position: bottom center;
 	height: 70vh;
